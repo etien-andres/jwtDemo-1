@@ -1,4 +1,4 @@
-package es.softtek.jwtDemo.controller;
+package mx.etienandres.jwtDemo.controller;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;

@@ -1,16 +1,16 @@
-package es.softtek.jwtDemo.controller;
+package mx.etienandres.jwtDemo.controller;
 
 import java.util.Date;
 import java.util.List;
 import java.util.stream.Collectors;
 
+import mx.etienandres.jwtDemo.dto.User;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.AuthorityUtils;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import es.softtek.jwtDemo.dto.User;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
 
@@ -29,13 +29,13 @@ public class UserController {
 	}
 
 	private String getJWTToken(String username) {
-		String secretKey = "mySecretKey";
+		String secretKey = "a2a367b9";
 		List<GrantedAuthority> grantedAuthorities = AuthorityUtils
 				.commaSeparatedStringToAuthorityList("ROLE_USER");
 		
 		String token = Jwts
 				.builder()
-				.setId("softtekJWT")
+				.setId("etien-andresJWT")
 				.setSubject(username)
 				.claim("authorities",
 						grantedAuthorities.stream()

@@ -1,4 +1,4 @@
-package es.softtek.jwtDemo;
+package mx.etienandres.jwtDemo;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

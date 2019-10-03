@@ -1,4 +1,4 @@
-package es.softtek.jwtDemo.dto;
+package mx.etienandres.jwtDemo.dto;
 
 public class User {
 
